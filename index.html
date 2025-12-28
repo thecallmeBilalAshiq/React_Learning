@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Refresher</title>
+
+    <script>
+        // Basic Javascript
+        console.log("Bilal Ashiq");
+
+        let name = "Bilal Ashiq";    // let variables can't be redeclared
+        console.log(name);
+
+        const age = 22;
+        console.log(age);
+
+        var city = "Karachi";    // var variables can be re declared / changed
+        console.log(city);
+
+        // function
+        function hello() {
+            console.log("This is a hello fucction")
+        }
+        hello();
+
+
+        // objects
+        let obj = {
+            r: 34,
+            m: 64,
+            func: function hello(number) {
+                console.log("Hello World " + number);
+            }
+        }
+
+        obj.func(5)
+
+
+        // Events
+
+        document.addEventListener("click", function click() {
+            // alert("Ad Listner event");
+            let conf = confirm("Are you sure? ");
+            console.log(conf);
+        })
+
+        // Arrays
+        let arr = [1, 2, 3, 4, 5];
+        console.log(arr);
+        arr.forEach(function callback(element) {
+            console.log(element);
+        });
+
+
+        // set timeout function
+
+        setTimeout(() => {
+            console.log("AFter 3 seconds")
+        }, 3000);
+
+        console.log("Neechy wali  line");
+    </script>
+</head>
+
+<body>
+    I am learning React.
+</body>
+
+</html>
